@@ -10,13 +10,15 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+import java.util.ArrayList;
+
+          public class MainActivity extends AppCompatActivity {
 
     TextView imc, rango;
     EditText peso, estatura, instrucciones;
     Spinner spinner;
 
-    Adapter adapter;
+    ArrayAdapter adapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
