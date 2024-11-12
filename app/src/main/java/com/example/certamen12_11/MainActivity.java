@@ -41,7 +41,9 @@ public class MainActivity extends AppCompatActivity {
             Double estaturaIMC = Double.parseDouble(estatura.getText().toString())/100;
 
             Double calculo = (pesoIMC / (estaturaIMC * estaturaIMC));
-            imc.setText("IMC: " + calculo);
+            String calc = calculo.toString().substring(0, 5);
+            imc.setText("IMC: " + calc);
+
             if(calculo <= 18.5){
                 rango.setText("Usted está bajo peso");
                 instrucciones.setText("1) come con mas frecuencia. Empieza poco a poco" +
