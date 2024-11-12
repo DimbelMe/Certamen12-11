@@ -31,12 +31,14 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void CalcularIMC(View view){
-        Double pesoIMC = Double.parseDouble(peso.getText().toString());
-        Double estaturaIMC = Double.parseDouble(estatura.getText().toString())/100;
+        String pesocomp = peso.getText().toString();
+        String estaturacomp = estatura.getText().toString();
 
-        if(pesoIMC.isNaN() || estaturaIMC.isNaN()){
-            Toast.makeText(this, "", Toast.LENGTH_SHORT).show();
+        if(pesocomp.isEmpty() || estaturacomp.isEmpty()){
+            Toast.makeText(this, "Error! No pueden haber campos vacios", Toast.LENGTH_SHORT).show();
         }else{
+            Double pesoIMC = Double.parseDouble(peso.getText().toString());
+            Double estaturaIMC = Double.parseDouble(estatura.getText().toString())/100;
 
             Double calculo = (pesoIMC / (estaturaIMC * estaturaIMC));
             imc.setText("IMC: " + calculo);
