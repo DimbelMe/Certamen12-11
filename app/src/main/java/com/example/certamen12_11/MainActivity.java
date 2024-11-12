@@ -33,6 +33,7 @@ import java.util.ArrayList;
         String[] lista = {"Seleccione: ", "Masculino", "Femenino"};
         adapter.add(lista);
         spinner.setAdapter(adapter);
+
     }
 
     public void CalcularIMC(View view){
