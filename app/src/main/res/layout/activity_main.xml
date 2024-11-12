@@ -45,8 +45,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="Ingrese su peso en kg"
-            android:inputType="textPersonName"
+            android:hint="Ingresar peso en KG"
+            android:inputType="number"
             android:textSize="20sp" />
 
         <TextView
@@ -63,14 +63,15 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="Ingrese su altura en centimetros"
-            android:inputType="textPersonName"
+            android:hint="Ingresar altura en CM"
+            android:inputType="number"
             android:textSize="20sp" />
 
         <Button
             android:id="@+id/button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="CalcularIMC"
             android:text="Button" />
 
         <TextView
