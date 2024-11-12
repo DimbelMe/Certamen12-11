@@ -11,9 +11,9 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
+public class MainActivity extends AppCompatActivity {
 
-          public class MainActivity extends AppCompatActivity {
-
+    //https://github.com/DimbelMe/Certamen12-11.git
     TextView imc, rango;
     EditText peso, estatura, instrucciones;
     Spinner spinner;
