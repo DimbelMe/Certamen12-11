@@ -30,6 +30,9 @@ import java.util.ArrayList;
         instrucciones = findViewById(R.id.txtInst);
         rango = findViewById(R.id.txtRango);
 
+        String[] lista = {"Seleccione: ", "Masculino", "Femenino"};
+        adapter.add(lista);
+        spinner.setAdapter(adapter);
     }
 
     public void CalcularIMC(View view){

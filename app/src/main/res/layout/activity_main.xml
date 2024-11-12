@@ -29,7 +29,8 @@
         <Spinner
             android:id="@+id/Spinner"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:entries="@android:array/organizationTypes" />
 
         <TextView
             android:id="@+id/textView4"
