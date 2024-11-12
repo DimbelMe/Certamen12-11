@@ -51,6 +51,7 @@ public class MainActivity extends AppCompatActivity {
                         "\n 6) Haz ejercicio");
             }else if(calculo >= 18.5 && calculo <= 24.9){
                 rango.setText("Felicitaciones ud mantiene una excelente alimentación");
+                instrucciones.setText("");
             }else if(calculo >= 25){
                 rango.setText("Usted está sobre peso");
                 instrucciones.setText("1 )Haga 30 minutos de ejercicio aerobico 5 veces por semana" +
